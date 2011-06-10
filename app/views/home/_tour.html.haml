@@ -1,2 +1,16 @@
-%h1 Tour
-%h3 Texto
+#banner
+  Vea el Tour
+  =link_to image_tag("prueba.png"), "", :id => "register", :class => 'but'
+
+%ul
+  %li= link_to "Ir a Dashboard", "#dashboard"
+  %li= link_to "Ir a Finanzas", "#finanzas"
+
+  %li= link_to "Ir a Inventarios", "#inventarios"
+#dashboard
+  %h3 Dashboard
+#finanzas
+  %h3 Finanzas
+#inventarios
+  %h3 Inventarios
+

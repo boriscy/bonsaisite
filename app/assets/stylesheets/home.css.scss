@@ -2,7 +2,7 @@ body{
   text-align: center;
   padding: 0px;
   margin: 0px;
-  background-color: lighten($grey, 20%);
+  background: transparent url(barra.png) repeat-x;
   font-family: arial, serif;
   font-size: 13px;
 }
@@ -23,10 +23,16 @@ a{
   -moz-box-shadow: $top $left $dif $col;
   -webkit-box-shadow: $top $left $dif $col;
 }
+/* Estilos*/
 .but{
   display: inline-block;
 }
-.clear{ clear: both; }
+.clear{ clear: both; 
+}
+.light-grey{ background-color: lighten($grey, 20%);}
+.pad-10{ padding: 10px; }
+
+/**************************************************************/
 
 #wrapper{
   width: 900px;
@@ -42,7 +48,9 @@ a{
   position: relative;
   height: 90px;
   #logo{
-    margin: 20px 10px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
   }
   #login{
     background: transparent url(user.png) no-repeat;
@@ -60,8 +68,8 @@ a{
   #menu{
     list-style: none;
     position: absolute;
-    top: 20px;
-    left: 230px;
+    top: 15px;
+    left: 200px;
 
     li{
       display: inline;
@@ -85,7 +93,6 @@ a{
     }
   }
 }
-
 #home{
   background: transparent url(imagenes.png) no-repeat;
   height: 411px;
@@ -103,31 +110,65 @@ a{
 }
 
 #boxes{
+  margin-top: 20px;
   padding: 0px 40px;
 }
 .box{
-  width: 30%;
+  width: 273px;
   float: left;
-  margin: 10px 5px;
-  h3{ margin: 4px; color: darken($green, 20%)}
-  p{
-    margin: 5px;
+  margin: 10px 0px;
+  h3{ 
+    margin: 5px 10px;
+    color: darken($green, 20%);
   }
+  p{
+    margin: 5px 10px;
+    height: 64px;
+  }
+  img{ margin: 4px 10px;}
 }
 #titles{
-  padding: 0px 150px;
+  padding: 5px 100px;
+  text-align: center;
 }
 .title{
-  width: 100%;
-  h2{ margin: 10px; color:darken($green, 40%); font-weight: normal; }
+  h2{ 
+    margin: 10px; color:darken($green, 40%); font-weight: normal; 
+    @include t-shadow(0px, 2px, 0px, $white);
   }
+}
+#buttons{
+  padding: 15px;
+}
 #foots{
-  padding: 1px 50px;
+  padding: 0px 50px;
 }  
 .foot{
-  width: 30%;
-  float: left;
+  width: 80%;
+  float: right;
   margin: 10px 5px;
+  h3{ margin: 4px; color:darken($green,20%)}
   p{margin: 5px;}
+}
+
+#banner{
+  position: relative;
+  background: transparent url(banner.png) no-repeat;
+  height: 101px;
+  #register{
+    position: absolute;
+    top: 20px;
+    right: 30px; 
+  }
+}
+#dashboard{
+  padding: 50px; 
+  border: url(tour_dashboard.png) no-repeat;
+}
+#finanzas{
+  padding: 50px; 
+}
+#inventarios{
+  padding: 50px; 
 }
 
