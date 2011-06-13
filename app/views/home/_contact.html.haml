@@ -1,1 +1,14 @@
-%h1 Contact
+%h1 Solicitud de Informacion
+
+#form_contact
+  %form(:action => "#", :method => "post", :name => "contact", :id => "contact")
+    %label Ingrese Nombre:
+    %input(:name => "name", :type => "text")
+      %br
+    %label Correo Electronico:
+    %input(:name ="email", :type => "text")
+      %br
+    %label Mensaje:
+    %textarea(:name => "message", :rows => "5")
+      %br
+    %button(:value => "Enviar, :name => "enviar", :type => "submit") 
