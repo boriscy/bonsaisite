@@ -1,12 +1,11 @@
-body{
+/*body{
   text-align: center;
   padding: 0px;
   margin: 0px;
-  background: transparent url(barra.png) repeat-x;
   font-family: arial, serif;
   font-size: 13px;
 }
-
+*/
 h1, h2, h3{ font-family: muli; }
 a{
   img{ border: none; }
@@ -37,9 +36,8 @@ a{
 #wrapper{
   width: 900px;
   text-align: left;
-  margin: 40px auto 60px auto;
-  background-color: $white;
-  @include b-shadow(0px, 0px, 10px, darken($grey, 30%));
+  margin: 0px auto 60px auto;
+  /*@include b-shadow(0px, 0px, 10px, darken($grey, 30%));*/
   border-radius: 4px 4px 8px 8px;
 }
 
@@ -96,17 +94,27 @@ a{
 #home{
   background: transparent url(imagenes.png) no-repeat;
   height: 411px;
-}
-#buttons{
-  font-weight: bold;
-  font-size: 1.2em;
-  a{ 
-    vertical-align: middle;
-    margin: 0px 3px;
-  }
+  position: relative;
   #register{
-    margin-left: 40px;
-  }  
+    position: absolute;
+    top: 50px;
+    right: 140px;
+  }
+  #tour{
+    position: absolute;
+    top: 50px;
+    right: 5px;
+  }
+  #title{
+    position: absolute;
+    width: 350px;
+    padding: 0px;
+    color: $white;
+    font-family: 'Muli', arial, serif;
+    top: 130px;
+    right: 10px;
+    h2{font-weight: normal; font-size: 18px;}
+  }
 }
 
 #boxes{
@@ -127,34 +135,28 @@ a{
   }
   img{ margin: 4px 10px;}
 }
-#titles{
-  padding: 5px 100px;
-  text-align: center;
-}
-.title{
-  h2{ 
-    margin: 10px; color:darken($green, 40%); font-weight: normal; 
-    @include t-shadow(0px, 2px, 0px, $white);
-  }
-}
 #buttons{
   padding: 15px;
 }
-#foots{
-  padding: 0px 50px;
+#footer{
+  text-align: center;
+  padding: 5px;
+  margin: 20px 0px;
 }  
-.foot{
-  width: 80%;
-  float: right;
-  margin: 10px 5px;
-  h3{ margin: 4px; color:darken($green,20%)}
-  p{margin: 5px;}
-}
 
 #banner{
   position: relative;
-  background: transparent url(banner.png) no-repeat;
+  margin: 0px;
+  padding: 0px; 
+  background: #F7F7F7 url(fondo2.png) repeat-x !important;
   height: 101px;
+  .title{
+    h2{ 
+      top: 10px;
+      margin: 10px; color:darken($white, 40%); font-weight: normal; 
+      @include t-shadow(0px, 2px, 0px, $white);
+    }
+  }
   #register{
     position: absolute;
     top: 20px;
@@ -162,14 +164,24 @@ a{
   }
 }
 #dashboard{
-  padding: 50px; 
-  border: url(tour_dashboard.png) no-repeat;
+  padding: 20px; 
 }
 #finanzas{
-  padding: 50px; 
+  padding: 20px; 
 }
 #inventarios{
-  padding: 50px; 
+  padding: 20px; 
 }
 
-#form_contact
+
+input, textarea{
+  font-family: arial;
+  font-weight: normal;
+}
+#contact{
+  input, textarea{
+    font-size: 20px;
+  }
+}
+
+

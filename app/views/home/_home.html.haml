@@ -1,11 +1,18 @@
-#home
-.light-grey
-  #buttons
-    = link_to image_tag("prueba.png"), "/users/sign_up", :id => "register", :class => 'but'
-    o
-    = link_to image_tag("tour.png"), "/tour", :id => "tour", :class => 'but'
+:css
+  body{
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    font-family: arial, serif;
+    font-size: 13px;
+    background: #F7F7F7 url(/assets/fondo.png) repeat-x !important;
+  }
 
-  #titles.title
+#home
+  = link_to image_tag("prueba.png"), "/users/sign_up", :id => "register", :class => 'but'
+  = link_to image_tag("tour.png"), "/tour", :id => "tour", :class => 'but'
+
+  #title
     %h2 <i>bonsai</i> es una herramienta de fácil  uso que brinda  una potente  administración de sus ingresos y egresos
 #boxes
   .box
@@ -23,3 +30,4 @@
     %p 
       <i>bonsai</i> esta diseñado para pequeñas y medianas empresas, quienes potenciaran la funcionalidad de procesos financieros.
     =image_tag "sales_small.png"
+  .clear

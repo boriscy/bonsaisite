@@ -1,14 +1,12 @@
-%h1 Solicitud de Informacion
+#banner
+  .title
+    %h2 Contactenos
+  =link_to image_tag("prueba.png"), "/users/sign_up", :id => "register", :class => 'but'
 
-#form_contact
-  %form(:action => "#", :method => "post", :name => "contact", :id => "contact")
-    %label Ingrese Nombre:
-    %input(:name => "name", :type => "text")
-      %br
-    %label Correo Electronico:
-    %input(:name ="email", :type => "text")
-      %br
-    %label Mensaje:
-    %textarea(:name => "message", :rows => "5")
-      %br
-    %button(:value => "Enviar, :name => "enviar", :type => "submit") 
+=form_tag("", :action => "post", :id => "contact") do
+  %p= text_field_tag "name", "Nombre", :size => 40
+  %p= text_field_tag "name", "Email", :size => 40
+  %p= text_area_tag "cont", "Mensaje", :cols => 45, :rows => 4
+  %p= submit_tag "Contactar" 
+
+:javascript

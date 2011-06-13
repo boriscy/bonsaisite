@@ -1,16 +1,20 @@
 #banner
-  Vea el Tour
-  =link_to image_tag("prueba.png"), "", :id => "register", :class => 'but'
+  .title 
+    %h2 Vea el tour
+  =link_to image_tag("prueba.png"), "/users/sign_up", :id => "register", :class => 'but'
 
 %ul
-  %li= link_to "Ir a Dashboard", "#dashboard"
-  %li= link_to "Ir a Finanzas", "#finanzas"
+  %li= link_to "ir a dashboard", "#dashboard"
+  %li= link_to "ir a finanzas", "#finanzas"
 
-  %li= link_to "Ir a Inventarios", "#inventarios"
+  %li= link_to "ir a inventarios", "#inventarios"
 #dashboard
-  %h3 Dashboard
+  %h3 dashboard
+  = image_tag "tour_dashboard.png" 
 #finanzas
-  %h3 Finanzas
+  %h3 finanzas
+  = image_tag "tour_ventas.png"
 #inventarios
   %h3 Inventarios
+  = image_tag "tour_cuentas.png"
 
