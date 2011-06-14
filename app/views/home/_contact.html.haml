@@ -1,12 +1,23 @@
 #banner
-  .title
-    %h2 Contactenos
+  %h2 Contactenos
   =link_to image_tag("prueba.png"), "/users/sign_up", :id => "register", :class => 'but'
+%h3
+  %p Uitilice el formulario de contactenos para mandar mensajes instantaneos  sobre cualquier tipo de consulta  que nos quiera  realizar a la brevedad  atenderemos su consulta.
 
-=form_tag("", :action => "post", :id => "contact") do
-  %p= text_field_tag "name", "Nombre", :size => 40
-  %p= text_field_tag "name", "Email", :size => 40
-  %p= text_area_tag "cont", "Mensaje", :cols => 45, :rows => 4
-  %p= submit_tag "Contactar" 
+._65.fl
+  =form_tag("", :action => "post", :id => "contact") do
+    %p
+      = label_tag "name", "Nombre"
+      = text_field_tag "name", "", :size => 45
+    %p
+      = label_tag "email", "Email"
+      = text_field_tag "email", "", :size => 45
+    %p
+      = label_tag "message", "Mensaje"
+      = text_area_tag "message", "", :cols => 35, :rows => 4
+    %p= submit_tag "Contactar"
 
-:javascript
+#direccion._35.fl
+  %h3 Bonsai Labs
+  %h3 Direccion: 
+

@@ -155,14 +155,12 @@ a{
   background: #F7F7F7 url(imagenes2.png);
   height: 99px;
 
-  .title{
-    h2{ 
-      margin: 0px;
-      top: 10px;
-      color:darken($white, 40%);
-      font-weight: normal; 
-      @include t-shadow(0px, 2px, 0px, $white);
-    }
+  h2{ 
+    margin: 0px;
+    top: 30px;
+    color:darken($green, 40%);
+    font-weight: normal; 
+    @include t-shadow(0px, 2px, 0px, $white);
   }
   #register{
     position: absolute;
@@ -170,6 +168,7 @@ a{
     right: 30px; 
   }
 }
+/* CSS de Tour*/
 #dashboard{
   padding: 20px; 
 }
@@ -177,18 +176,42 @@ a{
   padding: 20px; 
 }
 #inventarios{
-  padding: 20px; 
+  padding: 20px;
 }
 
-
-input, textarea{
-  font-family: arial;
-  font-weight: normal;
-}
 #contact{
   input, textarea{
-    font-size: 20px;
+    font-size: 1.5em;
+  }
+  label{
+    display: block;
+    font-weight: bold;
   }
 }
+/* CSS de Contactenos*/
+input[type=text], textarea{
+  border: 2px solid darken($grey, 10%);
+  padding-left: 3px;  
+  padding-top: 6px;
+  font-weight: normal;
+}
 
+.fl{ float: left; }
+._30{ width: 29%; }
+._35{ width: 34%; }
+._65{ width: 64%; }
+._70{ width: 69%; }
 
+ul.team{
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+
+  li{
+    width: 49%;
+    float: left;
+    height: 150px;
+    h3{ color: darken($green, 20%);}
+    p{ padding: 0px 10px 5px 5px; }
+  }
+}
