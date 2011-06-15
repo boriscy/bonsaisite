@@ -3,17 +3,65 @@
   =link_to image_tag("prueba.png"), "/users/sign_up", :id => "register", :class => 'but'
 
 %ul
-  %li= link_to "ir a dashboard", "#dashboard"
-  %li= link_to "ir a finanzas", "#finanzas"
+  %li= link_to "Ir a dashboard", "#dashboard"
+  %li= link_to "Ir a finanzas", "#finanzas"
+  %li= link_to "Ir a inventarios", "#inventarios"
 
-  %li= link_to "ir a inventarios", "#inventarios"
-#dashboard
-  %h3 dashboard
+#separacion
+  %h2 Dashboard
+#dashboard._60.fl
+
   = image_tag "tour_dashboard.png" 
-#finanzas
-  %h3 finanzas
+#comentario._35.fl
+  %h3 Acerca del Dashboard
+  %ul
+    %li
+      %p Menus rapidos.
+    %li
+      %p Resumen de cuentas por cobrar.
+    %li
+      %p Resumen de cuentas por pagar.
+    %li
+      %p Resumen total de cuentas bancarias y cuentas de caja.
+.clear
+#separacion
+  %h2 Finanzas
+#finanzas._60.fl
   = image_tag "tour_ventas.png"
-#inventarios
-  %h3 Inventarios
+#comentario._35.fl
+  %h3 Acerca de Finanzas
+  %ul
+    %li
+      %p Ventas, aspecto importante para una empresa.
+    %li
+      %p Adicion rapida de una venta.
+    %li
+      %p Organizacion funcional por: Todos, esperando aprobacion,  esperando cobro, vencidas, con inventario pendiente, cobradas.
+    %li
+      %p Visualizacion por colores de los estados de las ventas.
+    %li
+      %p Busqueda instantanea de la informacion.
+.clear
+#separacion
+  %h2 Inventarios
+#inventarios._60.fl
   = image_tag "tour_cuentas.png"
-
+#comentario._35.fl
+  %h3 Acerca del Inventario
+  %ul
+    %li
+      %p Se tiene el detalle de las cuentas bancarias.
+    %li
+      %p Adicion rapida de una cuenta bancaria.
+    %li
+      %p Se visualiza el total de la cuenta.
+    %li
+      %p Visualizacion por colores de los estados de las ventas.
+    %li
+      %p Se visualiza el saldo a conciliar.
+    %li
+      %p Acceso rapido a las revisiones de las transacciones pendientes.
+.clear
+%h1 
+  %center 
+    =link_to "Prueba gratis el sistema por 30 dias.", "/users/sign_up"

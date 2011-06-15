@@ -1,0 +1,35 @@
+#banner
+  %h2 Vea el tour
+  =link_to image_tag("prueba.png"), "/users/sign_up", :id => "register", :class => 'but'
+
+%ul
+  %li= link_to "ir a dashboard", "#dashboard"
+  %li= link_to "ir a finanzas", "#finanzas"
+  %li= link_to "ir a inventarios", "#inventarios"
+  
+#dashboard._65.fl
+  %h3 Dashboard
+
+  = image_tag "tour_dashboard.png" 
+#comentario.35.fl
+  Acerca del 'Dashboard'
+  %ul
+    %li
+      %p El menu del sistema es completamente directo: Inicio (Dashboard), Finanzas e Inventarios.
+    %li
+      %p Cuentas por cobrar
+    %li
+      %p Cuentas por pagar
+    %li
+      %p Resumen total de cuentas bancarias y cuentas de caja
+    %li
+      %p Cuentas por cobrar
+
+#finanzas._65.fl
+  %h3 Finanzas
+  = image_tag "tour_ventas.png"
+
+#inventarios._65.fl
+  %h3 Inventarios
+  = image_tag "tour_cuentas.png"
+
