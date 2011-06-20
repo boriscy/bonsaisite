@@ -2,18 +2,21 @@ body{
   text-align: center;
   padding: 0px;
   margin: 0px;
-  font-family: arial, serif;
+  font-family: Segoe UI,Arial,sans-serif;
   font-size: 13px;
   background: $back url(fondo2.png) repeat-x 0px -30px;
 }
 
-h1{
-  font-family: muli, arial, serif;
-  color: darken($green, 20%);
-} 
-h2, h3{ font-family: muli, arial, serif; }
+h1, h2, h3{ font-family: muli, arial, serif; }
 a{
+  color: darken( $blue, 25% );
   img{ border: none; }
+}
+ul{
+  margin: 4px;
+  padding: 4px 12px;
+  text-align: justify;
+  li{ padding: 4px 0px; }
 }
 
 @mixin t-shadow($top:1px, $left: 1px, $dif: 0px, $col: $grey){
@@ -189,11 +192,12 @@ a{
   h2{ color: darken($green, 20%);}
   padding: 10px;
 }
-#comentario{
+.comentario{
   padding-top: 90px;
   margin-top: 10px;
   margin-bottom: 20px;
   float:right;
+  width: 34%;
   h3{ color: darken($green, 20%);}
 }
 #separacion{
@@ -252,6 +256,5 @@ ul.team{
   margin-bottom: 10px;
   width: 50%;
   height: 1px;
-  background: black;
+  background: darken($green, 10%);
 }
-  
